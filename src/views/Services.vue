@@ -3,6 +3,7 @@
     <header_back_arrow :detail="service"></header_back_arrow>
     <div class="page-content-wrapper py-3">
       <Services_list :categories="service.service.categories" />
+      <Bottom_nav />
     </div>
   </div>
 </template>
@@ -11,9 +12,10 @@
 import header_back_arrow from "../components/header_back_arrow.vue";
 import global from "@/mixins/global.js";
 import Services_list from "../components/services_list.vue";
+import Bottom_nav from "../components/bottom_nav.vue";
 
 export default {
-  components: { header_back_arrow, Services_list },
+  components: { header_back_arrow, Services_list, Bottom_nav },
   data() {
     return {};
   },

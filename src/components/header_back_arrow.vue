@@ -28,20 +28,36 @@
             <h6 class="mb-0">{{ detail.service.name }}</h6>
           </div>
           <!-- Navbar Toggler-->
-          <div class="navbar--toggler" id="affanNavbarToggler">
+          <div
+            @click="toggleNav()"
+            class="navbar--toggler"
+            id="affanNavbarToggler"
+          >
             <span class="d-block"></span><span class="d-block"></span
             ><span class="d-block"></span>
           </div>
         </div>
+        <SideBar_Nav />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import SideBar_Nav from "./SideBar.vue";
 export default {
+  components: { SideBar_Nav },
   name: "Header_back_arrow",
   props: ["detail"],
+  data() {
+    return {};
+  },
+  methods: {
+    toggleNav() {
+      document.getElementById("sidenavWrapper").classList.add("nav-active");
+      document.getElementById("overlay").classList.add("active");
+    },
+  },
 };
 </script>
 

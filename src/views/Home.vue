@@ -13,7 +13,7 @@
 // @ is an alias to /src
 
 import Bottom_nav from "../components/bottom_nav.vue";
-import Header_nav from "../components/header.vue";
+import Header_nav from "../components/header_logo.vue";
 import Services_carousel from "../components/services_carousel.vue";
 import Slider_Component from "../components/slider.vue";
 export default {

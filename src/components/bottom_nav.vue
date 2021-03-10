@@ -9,7 +9,7 @@
             class="h-100 d-flex align-items-center justify-content-between ps-0"
           >
             <li class="active">
-              <a href="page-home.html"
+              <router-link to="/"
                 ><svg
                   width="20"
                   height="20"
@@ -26,7 +26,7 @@
                     fill-rule="evenodd"
                     d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
                   /></svg
-                ><span>Home</span></a
+                ><span>Home</span></router-link
               >
             </li>
             <li>
@@ -47,7 +47,7 @@
               >
             </li>
             <li>
-              <a href="elements.html"
+              <router-link to="/cart"
                 ><svg
                   width="20"
                   height="20"
@@ -60,11 +60,11 @@
                     fill-rule="evenodd"
                     d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"
                   /></svg
-                ><span>Elements</span></a
+                ><span>Cart</span></router-link
               >
             </li>
             <li>
-              <a href="page-shop-grid.html"
+              <router-link to="/shop"
                 ><svg
                   width="20"
                   height="20"
@@ -77,11 +77,11 @@
                     fill-rule="evenodd"
                     d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"
                   /></svg
-                ><span>Shop</span></a
+                ><span>Shop</span></router-link
               >
             </li>
             <li>
-              <a href="settings.html"
+              <router-link to="/settings"
                 ><svg
                   width="20"
                   height="20"
@@ -98,7 +98,7 @@
                     fill-rule="evenodd"
                     d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"
                   /></svg
-                ><span>Settings</span></a
+                ><span>Settings</span></router-link
               >
             </li>
           </ul>

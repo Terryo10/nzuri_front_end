@@ -7,10 +7,11 @@ export default {
       service: {},
       base_url:"http://127.0.0.1:8000/api/",
       service_url:"services/",
-      
+      navBarToggle: "",
+      navToggled: false,
+      overlay: "",
     };
   },
-
   methods: {
     getUnauthenticatedData (addedurl){
         // let data;+
@@ -21,8 +22,6 @@ export default {
          }).catch(error=>{
              console.log(error.respoonse)
          })
-
-         
-      }
+      },
   },
 };

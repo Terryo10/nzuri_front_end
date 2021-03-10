@@ -13,19 +13,32 @@
           <a href="/"><img src="template/img/core-img/logo.png" alt="" /></a>
         </div>
         <!-- Navbar Toggler-->
-        <div class="navbar--toggler" id="affanNavbarToggler">
+        <div
+          @click="toggleNav()"
+          class="navbar--toggler"
+          id="affanNavbarToggler"
+        >
           <span class="d-block"></span><span class="d-block"></span
           ><span class="d-block"></span>
         </div>
       </div>
+      <SideBar_Nav />
       <!-- # Header Five Layout End-->
     </div>
   </div>
 </template>
 
 <script>
+import SideBar_Nav from "./SideBar.vue";
 export default {
-  name: "header",
+  components: { SideBar_Nav },
+  name: "header_logo",
+  methods: {
+    toggleNav() {
+      document.getElementById("sidenavWrapper").classList.add("nav-active");
+      document.getElementById("overlay").classList.add("active");
+    },
+  },
 };
 </script>
 
