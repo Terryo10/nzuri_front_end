@@ -10,20 +10,20 @@
             class="card single-product-card"
           >
             <div class="card-body p-3">
-              <!-- Product Thumbnail--><a
+              <!-- Product Thumbnail--><router-link
+                :to="'/service_products/' + category.id"
                 class="product-thumbnail d-block"
-                href="page-shop-details.html"
                 ><img src="/template/img/bg-img/p1.jpg" alt="" />
-                <!-- Badge--><span class="badge bg-warning">Sale</span></a
+                <!-- Badge--><span class="badge bg-warning"
+                  >Sale</span
+                ></router-link
               >
-              <!-- Product Title--><a
+              <!-- Product Title--><router-link
                 class="product-title d-block text-truncate"
-                href="page-shop-details.html"
-                >{{ category.name }}</a
+                to=""
+                >{{ category.name }}</router-link
               >
               <!-- Product Price-->
-              <p class="sale-price">$9.89<span>$13.42</span></p>
-              <a class="btn btn-primary btn-sm" href="#">Add to Cart</a>
             </div>
           </div>
         </div>

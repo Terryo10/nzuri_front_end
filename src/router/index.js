@@ -40,6 +40,11 @@ const routes = [
     name: 'Oders',
     component: () => import('../views/Oders.vue')
   },
+  {
+    path: '/service_products/:id',
+    name: 'Service_products',
+    component: () => import('../views/Service_Products.vue')
+  },
 
 ]
 

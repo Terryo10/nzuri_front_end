@@ -40,7 +40,7 @@
       <!-- Sidenav Nav-->
       <ul class="sidenav-nav ps-0">
         <li>
-          <a href="page-home.html">
+          <router-link to="/">
             <svg
               width="18"
               height="18"
@@ -57,30 +57,11 @@
                 fill-rule="evenodd"
                 d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
               /></svg
-            >Home</a
+            >Home</router-link
           >
         </li>
         <li>
-          <a href="elements.html">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 16 16"
-              class="bi bi-folder2-open"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"
-              /></svg
-            >Elements<span class="badge bg-danger rounded-pill ms-2"
-              >220+</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="pages.html">
+          <router-link to="/cart">
             <svg
               width="18"
               height="18"
@@ -93,11 +74,13 @@
                 fill-rule="evenodd"
                 d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"
               /></svg
-            >Pages<span class="badge bg-success rounded-pill ms-2">38</span></a
+            >Cart<span class="badge bg-success rounded-pill ms-2"
+              >0</span
+            ></router-link
           >
         </li>
-        <li class="affan-dropdown-menu">
-          <a href="#">
+        <li>
+          <router-link to="/shop">
             <svg
               width="18"
               height="18"
@@ -108,24 +91,13 @@
             >
               <path
                 fill-rule="evenodd"
-                d="M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"
               /></svg
-            >Shop</a
+            >Shop</router-link
           >
-          <ul>
-            <li><a href="page-shop-grid.html">- Shop Grid</a></li>
-            <li><a href="page-shop-list.html">- Shop List</a></li>
-            <li><a href="page-shop-details.html">- Shop Details</a></li>
-            <li><a href="page-cart.html">- Cart</a></li>
-            <li><a href="page-checkout.html">- Checkout</a></li>
-          </ul>
         </li>
         <li>
-          <a href="settings.html">
+          <router-link to="/settings">
             <svg
               width="18"
               height="18"
@@ -142,7 +114,7 @@
                 fill-rule="evenodd"
                 d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"
               /></svg
-            >Settings</a
+            >Settings</router-link
           >
         </li>
         <li>
@@ -194,8 +166,7 @@
       <!-- Social Info-->
       <div class="social-info-wrap">
         <a href="#"><i class="fa fa-twitter"></i></a
-        ><a href="#"><i class="fa fa-facebook"></i></a
-        ><a href="#"><i class="fa fa-dribbble"></i></a>
+        ><a href="#"><i class="fa fa-facebook"></i></a>
       </div>
       <!-- Copyright Info-->
       <div class="copyright-info">

@@ -1,8 +1,15 @@
 <template>
   <div>
-    <header_back_arrow :detail="service"></header_back_arrow>
+    <header_back_arrow :detail="service.service.name"></header_back_arrow>
     <div class="page-content-wrapper py-3">
-      <Services_list :categories="service.service.categories" />
+      <div v-if="loading">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <Services_list v-else :categories="service.service.categories" />
       <Bottom_nav />
     </div>
   </div>

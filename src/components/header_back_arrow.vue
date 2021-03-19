@@ -25,7 +25,7 @@
           </div>
           <!-- Page Title-->
           <div class="page-heading">
-            <h6 class="mb-0">{{ detail.service.name }}</h6>
+            <h6 class="mb-0">{{ detail }}</h6>
           </div>
           <!-- Navbar Toggler-->
           <div
@@ -45,13 +45,16 @@
 
 <script>
 import SideBar_Nav from "./SideBar.vue";
+import global from "@/mixins/global.js";
 export default {
   components: { SideBar_Nav },
   name: "Header_back_arrow",
+
   props: ["detail"],
   data() {
     return {};
   },
+  mixins: [global],
   methods: {
     toggleNav() {
       document.getElementById("sidenavWrapper").classList.add("nav-active");

@@ -1,12 +1,10 @@
 <template>
-  <div>
-   
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-    name: 'slider_component'
+  name: "slider_component",
 };
 </script>
 
