@@ -3,12 +3,12 @@
     <div class="container">
       <div class="row g-3">
         <!-- Single Top Product Card-->
-        <div class="col-6 col-sm-4 col-lg-3">
-          <div
-            v-for="category in categories"
-            :key="category.id"
-            class="card single-product-card"
-          >
+        <div
+          class="col-6 col-sm-4 col-lg-3"
+          v-for="category in categories"
+          :key="category.id"
+        >
+          <div class="card single-product-card">
             <div class="card-body p-3">
               <!-- Product Thumbnail--><router-link
                 :to="'/service_products/' + category.id"

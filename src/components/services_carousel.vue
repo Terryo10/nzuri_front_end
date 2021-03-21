@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <div class="container">
       <!-- Element Heading-->
       <div class="element-heading">
@@ -48,7 +47,7 @@ export default {
   methods: {
     getServices() {
       axios
-        .get("http://127.0.0.1:8000/api/services")
+        .get("http://192.168.8.107:5000/api/services")
         .then((response) => (this.services = response.data.services));
     },
   },

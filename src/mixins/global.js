@@ -6,7 +6,7 @@ export default {
     return {
       service: {},
       service_products : {},
-      base_url:"http://127.0.0.1:8000/api/",
+      base_url:"http://192.168.8.107:5000/api/",
       service_url:"services/",
       service_products_url :"category/products/",
       navBarToggle: "",
@@ -36,6 +36,14 @@ export default {
           this.loading= false;
 
        })
-      }
+      },
+     
+        getServices() {
+          axios
+            .get("http://127.0.0.1:8000/api/services")
+            .then((response) => (this.services = response.data.services));
+        },
+       
+      
   },
 };
